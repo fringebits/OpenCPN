@@ -86,7 +86,7 @@
  * Revision 1.12  1999/11/26 03:05:38  warmerda
  * added unset field support
  */
-
+#include "stdafx.h"
 #include "ogr_feature.h"
 #include "ogr_api.h"
 #include "ogr_p.h"

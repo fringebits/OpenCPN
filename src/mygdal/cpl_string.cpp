@@ -165,7 +165,7 @@
  * New
  *
  **********************************************************************/
-
+#include "stdafx.h"
 #include "cpl_string.h"
 #include "cpl_vsi.h"
 

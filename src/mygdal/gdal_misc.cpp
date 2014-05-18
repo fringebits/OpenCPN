@@ -125,6 +125,7 @@
  * added GDALReadWorldFile()
  */
 
+#include "stdafx.h"
 #include "gdal_priv.h"
 #include "cpl_string.h"
 #include <ctype.h>

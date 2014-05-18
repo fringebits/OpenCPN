@@ -1,3 +1,4 @@
+#include "stdafx.h"
 /******************************************************************************
  *
  * Project:  CPL - Common Portability Library

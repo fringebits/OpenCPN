@@ -98,7 +98,7 @@
  * New
  *
  */
-
+#include "stdafx.h"
 #include "ogr_geometry.h"
 #include "ogr_api.h"
 #include "ogr_p.h"

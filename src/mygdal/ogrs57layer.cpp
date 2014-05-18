@@ -27,7 +27,7 @@
  ******************************************************************************
  *
  */
-
+#include "stdafx.h"
 #include "ogr_s57.h"
 #include "cpl_conv.h"
 #include "cpl_string.h"

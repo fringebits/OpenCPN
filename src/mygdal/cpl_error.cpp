@@ -115,7 +115,7 @@
  * New
  *
  **********************************************************************/
-
+#include "stdafx.h"
 #include "cpl_error.h"
 #include "cpl_vsi.h"
 #include "cpl_conv.h"
@@ -496,7 +496,7 @@ void CPLLoggingErrorHandler( CPLErr eErrClass, int nError,
                 else
                 {
                     int pos = 0;
-                    char *cpl_log_base = strdup(cpl_log);
+                    char *cpl_log_base = _strdup(cpl_log);
                     pos = strcspn(cpl_log_base, ".");
                     if (pos > 0)
                     {

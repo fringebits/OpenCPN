@@ -87,7 +87,7 @@
  * New
  *
  */
-
+#include "stdafx.h"
 #include "cpl_vsi.h"
 #include "cpl_error.h"
 
@@ -353,7 +353,7 @@ void VSIFree( void * pData )
 char *VSIStrdup( const char * pszString )
 
 {
-    return( strdup( pszString ) );
+    return( _strdup( pszString ) );
 }
 
 /************************************************************************/
@@ -379,7 +379,7 @@ int VSIMkdir( const char *pszPathname, long mode )
 {
 #ifdef WIN32
     (void) mode;
-    return mkdir( pszPathname );
+    return _mkdir(pszPathname);
 #elif defined(macos_pre10)
     return -1;
 #else
@@ -394,7 +394,7 @@ int VSIMkdir( const char *pszPathname, long mode )
 int VSIUnlink( const char * pszFilename )
 
 {
-    return unlink( pszFilename );
+    return _unlink( pszFilename );
 }
 
 /************************************************************************/
@@ -404,7 +404,7 @@ int VSIUnlink( const char * pszFilename )
 int VSIRmdir( const char * pszFilename )
 
 {
-    return rmdir( pszFilename );
+    return _rmdir( pszFilename );
 }
 
 /************************************************************************/

@@ -169,6 +169,7 @@
  *
  */
 
+#include "stdafx.h"
 #include "ogr_geometry.h"
 #include "ogr_p.h"
 #include <assert.h>

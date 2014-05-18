@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="mygdal">
+      <UniqueIdentifier>{01fe3168-beae-47cd-82fd-4867ac1162e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ios8211">
+      <UniqueIdentifier>{892a0456-36c5-4c33-bd55-8696e3b432fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_config.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_conv.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_csv.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_error.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_list.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_minixml.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_multiproc.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_odbc.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_port.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_string.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\cpl_vsi.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\gdal.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\gdal_frmts.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\gdal_priv.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\iso8211.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogr_api.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogr_attrind.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogr_core.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogr_feature.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogr_geometry.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogr_p.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogr_s57.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogr_spatialref.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\ogrsf_frmts.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mygdal\s57.h">
+      <Filter>mygdal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cpl_conv.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cpl_csv.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cpl_error.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cpl_findfile.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cpl_minixml.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cpl_path.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cpl_string.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cpl_vsisimple.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\cplgetsymbol.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ddfrecordindex.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\gdal_misc.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ograssemblepolygon.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrcurve.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrfeature.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrfeaturedefn.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrfielddefn.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrgeometry.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrgeometrycollection.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrgeometryfactory.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrlayer.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrlinearring.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrlinestring.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrmultilinestring.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrmultipoint.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrmultipolygon.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrpoint.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrpolygon.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrs57datasource.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrs57layer.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\ogrutils.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\s57classregistrar.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\s57featuredefns.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mygdal\s57reader.cpp">
+      <Filter>mygdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\myiso8211\ddffield.cpp">
+      <Filter>ios8211</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\myiso8211\ddffielddefn.cpp">
+      <Filter>ios8211</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\myiso8211\ddfmodule.cpp">
+      <Filter>ios8211</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\myiso8211\ddfrecord.cpp">
+      <Filter>ios8211</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\myiso8211\ddfsubfielddefn.cpp">
+      <Filter>ios8211</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\myiso8211\ddfutils.cpp">
+      <Filter>ios8211</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

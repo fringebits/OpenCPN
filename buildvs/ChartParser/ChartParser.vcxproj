@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD05A2B7-3D10-4A1E-A4C5-AABAADE503C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ChartParser</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\include;$(SolutionDir)\..\src\mygdal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\include;$(SolutionDir)\..\src\mygdal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\mygdal\cpl_config.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_conv.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_csv.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_error.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_list.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_minixml.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_multiproc.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_odbc.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_port.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_string.h" />
+    <ClInclude Include="..\..\src\mygdal\cpl_vsi.h" />
+    <ClInclude Include="..\..\src\mygdal\gdal.h" />
+    <ClInclude Include="..\..\src\mygdal\gdal_frmts.h" />
+    <ClInclude Include="..\..\src\mygdal\gdal_priv.h" />
+    <ClInclude Include="..\..\src\mygdal\iso8211.h" />
+    <ClInclude Include="..\..\src\mygdal\ogrsf_frmts.h" />
+    <ClInclude Include="..\..\src\mygdal\ogr_api.h" />
+    <ClInclude Include="..\..\src\mygdal\ogr_attrind.h" />
+    <ClInclude Include="..\..\src\mygdal\ogr_core.h" />
+    <ClInclude Include="..\..\src\mygdal\ogr_feature.h" />
+    <ClInclude Include="..\..\src\mygdal\ogr_geometry.h" />
+    <ClInclude Include="..\..\src\mygdal\ogr_p.h" />
+    <ClInclude Include="..\..\src\mygdal\ogr_s57.h" />
+    <ClInclude Include="..\..\src\mygdal\ogr_spatialref.h" />
+    <ClInclude Include="..\..\src\mygdal\s57.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\mygdal\cplgetsymbol.cpp" />
+    <ClCompile Include="..\..\src\mygdal\cpl_conv.cpp" />
+    <ClCompile Include="..\..\src\mygdal\cpl_csv.cpp" />
+    <ClCompile Include="..\..\src\mygdal\cpl_error.cpp" />
+    <ClCompile Include="..\..\src\mygdal\cpl_findfile.cpp" />
+    <ClCompile Include="..\..\src\mygdal\cpl_minixml.cpp" />
+    <ClCompile Include="..\..\src\mygdal\cpl_path.cpp" />
+    <ClCompile Include="..\..\src\mygdal\cpl_string.cpp" />
+    <ClCompile Include="..\..\src\mygdal\cpl_vsisimple.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ddfrecordindex.cpp" />
+    <ClCompile Include="..\..\src\mygdal\gdal_misc.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ograssemblepolygon.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrcurve.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrfeature.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrfeaturedefn.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrfielddefn.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrgeometry.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrgeometrycollection.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrgeometryfactory.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrlayer.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrlinearring.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrlinestring.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrmultilinestring.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrmultipoint.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrmultipolygon.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrpoint.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrpolygon.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrs57datasource.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrs57layer.cpp" />
+    <ClCompile Include="..\..\src\mygdal\ogrutils.cpp" />
+    <ClCompile Include="..\..\src\mygdal\s57classregistrar.cpp" />
+    <ClCompile Include="..\..\src\mygdal\s57featuredefns.cpp" />
+    <ClCompile Include="..\..\src\mygdal\s57reader.cpp" />
+    <ClCompile Include="..\..\src\myiso8211\ddffield.cpp" />
+    <ClCompile Include="..\..\src\myiso8211\ddffielddefn.cpp" />
+    <ClCompile Include="..\..\src\myiso8211\ddfmodule.cpp" />
+    <ClCompile Include="..\..\src\myiso8211\ddfrecord.cpp" />
+    <ClCompile Include="..\..\src\myiso8211\ddfsubfielddefn.cpp" />
+    <ClCompile Include="..\..\src\myiso8211\ddfutils.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -265,8 +265,8 @@ typedef unsigned long    GUIntBig;
 
 #ifndef EQUAL
 #ifdef WIN32
-#  define EQUALN(a,b,n)           (strnicmp(a,b,n)==0)
-#  define EQUAL(a,b)              (stricmp(a,b)==0)
+#  define EQUALN(a,b,n)           (_strnicmp(a,b,n)==0)
+#  define EQUAL(a,b)              (_stricmp(a,b)==0)
 #else
 #  define EQUALN(a,b,n)           (strncasecmp(a,b,n)==0)
 #  define EQUAL(a,b)              (strcasecmp(a,b)==0)

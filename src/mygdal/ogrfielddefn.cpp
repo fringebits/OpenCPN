@@ -59,7 +59,7 @@
  * Revision 1.1  1999/06/11 19:21:02  warmerda
  * New
  */
-
+#include "stdafx.h"
 #include "ogr_feature.h"
 #include "ogr_api.h"
 #include "ogr_p.h"

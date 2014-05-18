@@ -28,7 +28,7 @@
  *
  *
  */
-
+#include "stdafx.h"
 #include "cpl_csv.h"
 #include "cpl_conv.h"
 

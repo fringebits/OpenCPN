@@ -99,7 +99,7 @@
  * New
  *
  */
-
+#include "stdafx.h"
 #include "iso8211.h"
 #include "cpl_string.h"
 #include <ctype.h>

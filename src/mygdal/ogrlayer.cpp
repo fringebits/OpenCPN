@@ -28,7 +28,7 @@
  *
  *
  */
-
+#include "stdafx.h"
 #include "ogrsf_frmts.h"
 #include "ogr_api.h"
 #include "ogr_p.h"

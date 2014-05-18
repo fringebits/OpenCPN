@@ -29,6 +29,7 @@
  * *
  */
 
+#include "stdafx.h"
 #include "s57.h"
 #include "ogr_api.h"
 #include "cpl_conv.h"

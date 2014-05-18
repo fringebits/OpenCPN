@@ -83,7 +83,7 @@
  * New
  *
  */
-
+#include "stdafx.h"
 #include "ogr_geometry.h"
 #include "ogr_p.h"
 

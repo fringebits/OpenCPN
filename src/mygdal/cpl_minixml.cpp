@@ -133,7 +133,7 @@
  * Revision 1.1  2001/11/16 15:39:48  warmerda
  * New
  */
-
+#include "stdafx.h"
 #include <ctype.h>
 #include "cpl_minixml.h"
 #include "cpl_error.h"

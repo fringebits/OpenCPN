@@ -82,7 +82,7 @@
  * New
  *
  */
-
+#include "stdafx.h"
 #include "ogr_geometry.h"
 #include "ogr_api.h"
 #include "cpl_conv.h"
