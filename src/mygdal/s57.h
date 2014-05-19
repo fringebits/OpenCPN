@@ -151,8 +151,8 @@ class S57Reader
     int                 nFDefnCount;
     OGRFeatureDefn      **papoFDefnList;
 
-    char                *pszModuleName;
-    char                *pszDSNM;
+    std::string          m_moduleName;
+    std::string          m_DSNM;
 
     DDFModule           *poModule;
 
@@ -221,7 +221,7 @@ class S57Reader
     int                 Open( int bTestOpen );
     void                Close();
     DDFModule           *GetModule() { return poModule; }
-    const char          *GetDSNM() { return pszDSNM; }
+    const char          *GetDSNM() { return m_DSNM.c_str(); }
     int                 GetCSCL() { return nCSCL; }
 
     int                 Ingest(CallBackFunction pcallback = NULL);

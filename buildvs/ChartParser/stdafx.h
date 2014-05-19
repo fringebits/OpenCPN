@@ -13,3 +13,8 @@
 #include <tchar.h>
 
 // TODO: reference additional headers your program requires here
+
+#include <memory>
+#include <string>
+#include <vector>
+#include <list>

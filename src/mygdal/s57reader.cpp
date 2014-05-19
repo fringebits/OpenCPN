@@ -40,12 +40,9 @@
 /*                             S57Reader()                              */
 /************************************************************************/
 
-S57Reader::S57Reader( const char * pszFilename )
-
+S57Reader::S57Reader( const char * pszFilename ) :
+    m_moduleName(pszFilename)
 {
-    pszModuleName = CPLStrdup( pszFilename );
-    pszDSNM = NULL;
-
     poModule = NULL;
 
     nFDefnCount = 0;
@@ -86,7 +83,6 @@ S57Reader::~S57Reader()
 {
     Close();
 
-    CPLFree( pszModuleName );
     CSLDestroy( papszOptions );
 
     CPLFree( papoFDefnList );
@@ -106,7 +102,7 @@ int S57Reader::Open( int bTestOpen )
     }
 
     poModule = new DDFModule();
-    if( !poModule->Open( pszModuleName ) )
+    if( !poModule->Open(m_moduleName.c_str()))
     {
         // notdef: test bTestOpen.
         delete poModule;
@@ -121,7 +117,7 @@ int S57Reader::Open( int bTestOpen )
         {
             CPLError( CE_Failure, CPLE_AppDefined,
                       "%s is an ISO8211 file, but not an S-57 data file.\n",
-                      pszModuleName );
+                      m_moduleName.c_str());
         }
         delete poModule;
         poModule = NULL;
@@ -169,8 +165,7 @@ void S57Reader::Close()
 
         CPLFreeConfig();
 
-        CPLFree( pszDSNM );
-        pszDSNM = NULL;
+        m_DSNM.clear();
     }
 }
 
@@ -390,8 +385,7 @@ int S57Reader::Ingest(CallBackFunction pcallback)
 
         else if( EQUAL(pszname,"DSID") )
         {
-            CPLFree( pszDSNM );
-            pszDSNM = CPLStrdup(poRecord->GetStringSubfield( "DSID", 0, "DSNM", 0 ));
+            m_DSNM = std::string(poRecord->GetStringSubfield( "DSID", 0, "DSNM", 0 ));
             Nall = poRecord->GetIntSubfield( "DSSI", 0, "NALL", 0 );
         }
 
@@ -2591,7 +2585,9 @@ int S57Reader::FindAndApplyUpdates( const char * pszPath )
     int         ret_code = 0;
 
     if( pszPath == NULL )
-        pszPath = pszModuleName;
+    {
+        pszPath = m_moduleName.c_str();
+    }
 
     if( !EQUAL(CPLGetExtension(pszPath),"000") )
     {
